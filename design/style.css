@@ -1,0 +1,163 @@
+body, *::before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:62.5%
+}
+
+body {
+    background: hsl(0, 0%, 95%);   
+    font-size: 1.5rem;
+    font-family: "Lexend Deca";
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 2.5rem;
+    font-weight: 400;
+  
+}
+
+h1,h2 {
+    font-family: "Big Shoulders Display";
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color:hsl(0, 0%, 95%);
+  }
+
+main {
+    height: 100vh;
+    width:100vw;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 50rem;
+    width:92rem;    
+    display: flex;    
+    
+}
+
+section > div {
+    height: 100%;
+    width:33.33%;
+    
+}
+
+section >div:nth-of-type(1){
+    background: hsl(31, 77%, 52%);
+    border-radius: 2rem 0 0 2rem;
+  }
+  
+  section >div:nth-of-type(2){
+    background: hsl(184, 100%, 22%)
+  }
+  
+  section >div:nth-of-type(3){
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 2rem 2rem 0;
+  }
+
+section > div > * {
+    margin: 0 5rem 0 5rem;
+}
+
+img {
+    padding:4.8rem 0 4.3rem 0
+}
+
+img ~ p {
+    padding: 4.3rem 0 7rem 0
+}
+
+.orange p {
+    color:hsl(31, 77%, 52%)
+  }
+  
+.cyan p {
+    color:hsl(184, 100%, 22%)
+}
+  
+.dcyan p {
+    color:hsl(179, 100%, 13%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color:inherit;
+}
+
+  .button {
+    height:48px;
+    width:148px;
+    border-radius: 30px;
+    margin-left:48px;
+    background:hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+  }
+
+  .button:hover {
+      border:2px solid hsl(0, 0%, 95%);
+      background-color: inherit;
+      color:hsl(0, 0%, 95%);
+  }
+
+  .button:hover p {
+      color:hsl(0, 0%, 95%);
+  }
+
+  @media screen and (max-width:750px){
+
+    main {
+        width:95%;
+        margin:auto;
+        justify-content: flex-start;
+        height: 100%;
+        
+    }
+
+    section {
+        width:100%;
+        flex-direction: column;
+        height: auto;
+        margin: 10rem 0 5rem 0;
+
+    }
+
+    section > div {
+        width:inherit;
+        height: auto;
+    }
+
+    section >div:nth-of-type(1){       
+        border-radius: 2rem 2rem 0 0;
+      }     
+      
+    section >div:nth-of-type(3){
+        
+        border-radius: 0 0 2rem 2rem;
+      }
+
+    .button {
+        margin-bottom: 4rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  }
